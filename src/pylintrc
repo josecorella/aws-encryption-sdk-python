@@ -10,10 +10,7 @@ disable =
     attribute-defined-outside-init,  # breaks with attrs_post_init
     abstract-method,  # throws false positives on io.BaseIO grandchildren
     redefined-outer-name,  # we do this on purpose in multiple places
-    # All below are disabled because we need to support Python 2
-    useless-object-inheritance,
-    raise-missing-from,
-    super-with-arguments,
+    consider-using-f-string
 
 [BASIC]
 # Allow function names up to 50 characters
